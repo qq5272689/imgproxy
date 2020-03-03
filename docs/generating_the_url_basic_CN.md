@@ -44,14 +44,14 @@ imgproxy支持以下大小调整类型：
 * `soea`: 东南（右下角）；
 * `sowe`: 西南（左下角）；
 * `ce`: 中心；
-* `sm`: 聪明。`libvips `检测图像中最“有趣”的部分，并将其视为结果图像的中心；
-* `fp:%x:%y` - 焦点。`x和y是介于0和1之间的浮点数，用于描述结果图像中心的坐标。将0和1视为“x”的右/左，将“y”的上/下。
+* `sm`: 聪明。`libvips`检测图像中最“有趣”的部分，并将其视为结果图像的中心；
+* `fp:%x:%y` - 焦点。`x`和`y`是介于0和1之间的浮点数，用于描述结果图像中心的坐标。将0和1视为“x”的右/左，将“y”的上/下。
 
 ### Enlarge放大
 
-当设置为“1”、“t”或“true”时，如果图像小于给定大小，imgproxy将放大图像。
+当设置为`1`、`t`或`true`时，如果图像小于给定大小，imgproxy将放大图像。
 
-### Source URLSource URL
+### Source URL源URL
 
 有两种方法可以指定源url：
 
@@ -63,9 +63,9 @@ imgproxy支持以下大小调整类型：
 /plain/http://example.com/images/curiosity.jpg
 ```
 
-**📝注意:** 如果sorce URL包含查询字符串或“@”，则需要对其进行转义。
+**📝注意:** 如果sorce URL包含查询字符串或`@`，则需要对其进行转义。
 
-When using plain source URL, you can specify the [extension](#extension) after `@`:
+使用显式URL时, 可以在`@`之后指定 [扩展名](#extension) `:
 
 ```
 /plain/http://example.com/images/curiosity.jpg@png
@@ -87,9 +87,9 @@ When using plain source URL, you can specify the [extension](#extension) after `
 
 ### Extension
 
-扩展名指定结果图像的格式。目前，imgproxy只支持“jpg”、“png”、“webp”、“gif”、“ico”、“heic”和“tiff”，它们是最流行和最有用的图像格式。
+扩展名指定结果图像的格式。目前，imgproxy只支持`jpg`、`png`、`webp`、`gif`、`ico`、`heic`和`tiff`，它们是最流行和最有用的图像格式。
 
-<img class="pro-badge" src="assets/pro.svg" alt="pro" /> 您还可以使用“mp4”扩展名将动画图像转换为mp4。
+<img class="pro-badge" src="assets/pro.svg" alt="pro" /> 您还可以使用`mp4`扩展名将动画图像转换为mp4。
 
 **📝注意:** 阅读有关图像格式支持的详细信息 [这里](image_formats_support.md).
 
@@ -97,7 +97,7 @@ When using plain source URL, you can specify the [extension](#extension) after `
 
 ## Example举例
 
-签名的imgproxy URL可调整“http://example.com/images/curiority.jpg”大小，以在不放大的情况下使用智能重力填充“300x400”区域，并将图像转换为“png”：
+签名的imgproxy URL可调整“http://example.com/images/curiority.jpg”大小，以在不放大的情况下使用智能重力填充`300x400`区域，并将图像转换为`png`：
 
 ```
 http://imgproxy.example.com/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/fill/300/400/sm/0/plain/http://example.com/images/curiosity.jpg@png
