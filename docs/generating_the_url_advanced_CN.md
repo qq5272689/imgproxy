@@ -354,7 +354,7 @@ jpeg_options:%progressive:%no_subsample:%trellis_quant:%overshoot_deringing:%opt
 jpgo:%progressive:%no_subsample:%trellis_quant:%overshoot_deringing:%optimize_scans:%quant_table
 ```
 
-Allows redefining JPEG saving options. All arguments have the same meaning as [Advanced JPEG compression](configuration.md#advanced-jpeg-compression) configs. All arguments are optional and can be omitted.
+允许重新定义JPEG保存选项。 所有参数的含义与[高级JPEG压缩](configuration.md#advanced-jpeg-compression)配置相同。  所有参数都是可选的，可以省略。
 
 #### PNG 选项 <img class="pro-badge" src="assets/pro.svg" alt="pro" />
 
@@ -363,7 +363,7 @@ png_options:%png_interlaced:%png_quantize:%png_quantization_colors
 pngo:%png_interlaced:%png_quantize:%png_quantization_colors
 ```
 
-Allows redefining PNG saving options. All arguments have the same meaning as [Advanced PNG compression](configuration.md#advanced-png-compression) configs. All arguments are optional and can be omitted.
+允许重新定义PNG保存选项。 所有参数的含义与[高级PNG压缩](configuration.md#advanced-png-compression) 。 所有参数都是可选的，可以省略。
 
 #### GIF 选项 <img class="pro-badge" src="assets/pro.svg" alt="pro" />
 
@@ -372,7 +372,7 @@ gif_options:%gif_optimize_frames:%gif_optimize_transparency
 gifo:%gif_optimize_frames:%gif_optimize_transparency
 ```
 
-Allows redefining GIF saving options. All arguments have the same meaning as [Advanced GIF compression](configuration.md#advanced-gif-compression) configs. All arguments are optional and can be omitted.
+允许重新定义GIF保存选项。 所有参数的含义与[高级GIF压缩](configuration.md#advanced-gif-compression) 。 所有参数都是可选的，可以省略。
 
 #### Preset预设
 
